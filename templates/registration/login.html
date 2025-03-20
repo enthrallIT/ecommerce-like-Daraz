@@ -1,0 +1,13 @@
+
+{% block content %}
+{% include 'shop/header.html' %}
+<script src="https://cdn.tailwindcss.com"></script>
+<h2>Login</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+</form>
+<p>Forgot your password? <a href="{% url 'accounts:forgot_password' %}">Reset it</a></p>
+<p>Don't have an account? <a href="{% url 'accounts:register' %}">Register</a></p>
+{% endblock %}

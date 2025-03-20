@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ action }} Offer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    {% include 'shop/header.html' %}
+
+    <div class="container mx-auto p-4">
+        <h2 class="text-2xl font-bold mb-4">{{ action }} Offer</h2>
+
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="{{ form.title.id_for_label }}">
+                        title
+                    </label>
+                    {{ form.title }}
+                    {% if form.title.errors %}
+                        <p class="text-red-500 text-xs italic">{{ form.title.errors }}</p>
+                    {% endif %}
+                </div>
+                
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="{{ form.image.id_for_label }}">
+                        Image
+                    </label>
+                    {{ form.image }}
+                    {% if form.image.errors %}
+                        <p class="text-red-500 text-xs italic">{{ form.image.errors }}</p>
+                    {% endif %}
+                    {% if offer.image %}
+                        <img src="{{ offer.image.url }}" alt="{{ offer.title }}" class="mt-2 h-32 w-auto">
+                    {% endif %}
+                </div>
+                
+                <div class="mb-4">
+                    <label class="block text-gray-700 text-sm font-bold mb-2" for="{{ form.is_active.id_for_label }}">
+                        Status
+                    </label>
+                    {{ form.is_active }}
+                    {% comment %} <p class="text-xs text-gray-500">if act</p> {% endcomment %}
+                    {% if form.is_active.errors %}
+                        <p class="text-red-500 text-xs italic">{{ form.is_active.errors }}</p>
+                    {% endif %}
+                </div>
+                
+                <div class="flex items-center justify-between mt-4">
+                    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                        Submit
+                    </button>
+                    <a href="{% url 'shop:dashboard' %}" class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">
+                        Back
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

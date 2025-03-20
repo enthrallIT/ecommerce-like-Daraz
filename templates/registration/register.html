@@ -1,0 +1,12 @@
+{% block content %}
+<script src="https://cdn.tailwindcss.com"></script>
+{% include 'shop/header.html' %}
+
+<h2>Register</h2>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+</form>
+<p>Already have an account? <a href="{% url 'accounts:login' %}">Login</a></p>
+{% endblock %}

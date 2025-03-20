@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- tailwindCSS -->
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+        }
+      </style> -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <!-- daisyUI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- fontawesome  -->
+  <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="">
+  <!-- nav start -->
+
+  <nav class="">
+    <div class="bg-sky-600 navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Item 1</a></li>
+            <li>
+              <a>Parent</a>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <a class="">
+          <img class="w-28" src="images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Item 1</a></li>
+          <li>
+            <details>
+              <summary>Parent</summary>
+              <ul class="p-2">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><a>Item 3</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a class="btn">0.00</a>
+      </div>
+    </div>
+  </nav>
+  <!-- nav end  -->
+
+  <!-- combo offer card start-->
+  <div class="combo-section container lg:px-5 mx-auto my-10">
+    <h3 class="text-2xl font-medium"><i class="fa-regular fa-clock text-sky-600 my-10"></i> combo & offer</h3>
+    <div class="grid lg:grid-cols-6 md:grid-cols-2 sm:grid-cols-1 justify-items-center md:gap-2 lg:gap-5 ">
+      <!-- card-1 -->
+      <div class="combo-card ">
+        <div class="">
+          <figure>
+            <img class="rounded-lg" class="w-fit" src="images/combo-image.png" alt="">
+          </figure>
+          <div class="px-4">
+            <h4 class="text-lg font-medium my-1">Lichi flower honey</h4>
+            <div class="price-area flex items-center justify-between my-1">
+              <div class="font-medium text-lg price--line-through">15,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+              <div class="font-medium text-lg price text-sky-600">10,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+            </div>
+            <div class="add-card flex items-center justify-between my-1">
+              <div class="">
+                <button class="text-white btn btn-sm px-4 bg-sky-600">Add To Cart</button>
+              </div>
+              <div class="" title="Quick view">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="combo-card ">
+        <div class="">
+          <figure>
+            <img class="rounded-lg" class="w-fit" src="images/combo-image.png" alt="">
+          </figure>
+          <div class="px-4">
+            <h4 class="text-lg font-medium my-1">Lichi flower honey</h4>
+            <div class="price-area flex items-center justify-between">
+              <div class="font-medium text-lg price--line-through">15,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+              <div class="font-medium text-lg price text-sky-600">10,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+            </div>
+            <div class="add-card flex items-center justify-between">
+              <div class="">
+                <button class="text-white btn btn-sm px-4 bg-sky-600">Add To Cart</button>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="combo-card ">
+        <div class="">
+          <figure>
+            <img class="rounded-lg" class="w-fit" src="images/combo-image.png" alt="">
+          </figure>
+          <div class="px-4">
+            <h4 class="text-lg font-medium my-1">Lichi flower honey</h4>
+            <div class="price-area flex items-center justify-between">
+              <div class="font-medium text-lg price--line-through">15,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+              <div class="font-medium text-lg price text-sky-600">10,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+            </div>
+            <div class="add-card flex items-center justify-between">
+              <div class="">
+                <button class="text-white btn btn-sm px-4 bg-sky-600">Add To Cart</button>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="combo-card ">
+        <div class="">
+          <figure>
+            <img class="rounded-lg" class="w-fit" src="images/combo-image.png" alt="">
+          </figure>
+          <div class="px-4">
+            <h4 class="text-lg font-medium my-1">Lichi flower honey</h4>
+            <div class="price-area flex items-center justify-between">
+              <div class="font-medium text-lg price--line-through">15,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+              <div class="font-medium text-lg price text-sky-600">10,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+            </div>
+            <div class="add-card flex items-center justify-between">
+              <div class="">
+                <button class="text-white btn btn-sm px-4 bg-sky-600">Add To Cart</button>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="combo-card ">
+        <div class="">
+          <figure>
+            <img class="rounded-lg" class="w-fit" src="images/combo-image.png" alt="">
+          </figure>
+          <div class="px-4">
+            <h4 class="text-lg font-medium my-1">Lichi flower honey</h4>
+            <div class="price-area flex items-center justify-between">
+              <div class="font-medium text-lg price--line-through">15,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+              <div class="font-medium text-lg price text-sky-600">10,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+            </div>
+            <div class="add-card flex items-center justify-between">
+              <div class="">
+                <button class="text-white btn btn-sm px-4 bg-sky-600">Add To Cart</button>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="combo-card ">
+        <div class="">
+          <figure>
+            <img class="rounded-lg" class="w-fit" src="images/combo-image.png" alt="">
+          </figure>
+          <div class="px-4">
+            <h4 class="text-lg font-medium my-1">Lichi flower honey</h4>
+            <div class="price-area flex items-center justify-between">
+              <div class="font-medium text-lg price--line-through">15,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+              <div class="font-medium text-lg price text-sky-600">10,000 <i
+                  class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+            </div>
+            <div class="add-card flex items-center justify-between">
+              <div class="">
+                <button class="text-white btn btn-sm px-4 bg-sky-600">Add To Cart</button>
+              </div>
+              <div class="">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- combo offer card end-->
+  <!-- footer start  -->
+  <footer class="nefooter bg-sky-600 text-base-content p-10 mt-10">
+    <div class="">
+      <div class="grid lg:grid-cols-6 sm:grid-cols-2 md:grid-cols-11 text-white">
+
+        <!-- ABOUT THE STORE -->
+        <div class="mx-auto">
+          <h1 class="text-xl font-bold text-center ">ABOUT THE <br> STORE</h1>
+          <h4 class="text-sm py-2 opacity-70">Got Question? Call us 09AM - 06PM</h4>
+          <h4 class="text-xl font-bold py-2">+8801861005555</h4>
+          <h4 class="text-xl font-bold py-2">+8801861005555</h4>
+          <h4 class="text-sm py-2 opacity-70">info@shorobor.org</h4>
+          <h4 class="text-sm py-2 opacity-70">Join our Telegram <br> https://t.me/shorobor</h4>
+        </div>
+        <!-- CATEGORIES  -->
+
+        <div class="mx-auto">
+          <a href="">
+            <h2 class=" font-bold mb-5">CATEGORIES</h2>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Groceries</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Beauty Products</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Social Business</h4>
+          </a>
+        </div>
+        <!-- OUR STORES  -->
+        <div class="mx-auto">
+          <a href="">
+            <h2 class=" font-bold mb-5">OUR STORES</h2>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Dhaka</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Chittagong</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Sylhet</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Barisal</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Maymensingh</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Rangpur</h4>
+          </a>
+        </div>
+        <!-- USEFUL LINKS -->
+        <div class="mx-auto">
+          <a href="">
+            <h2 class=" font-bold mb-5">USEFUL LINKS</h2>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Privacy Policy</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Terms & Conditions</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Contact Us</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Story of Shorobor</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Career</h4>
+          </a>
+          <a href="">
+            <h4 class="text-sm py-2 opacity-70">Blog</h4>
+          </a>
+        </div>
+        <div class="col-span-2">
+          <h2 class=" font-bold mb-5">AVAILABLE ON:</h2>
+          <a href=""><img class="w-50" src="images/play.png" alt=""></a>
+          <h2 class=" font-bold mb-5">Join our newsletter!</h2>
+          
+          <label class="input input-bordered flex items-center gap-2 ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="h-4 w-4 opacity-70">
+              <path
+                d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+              <path
+                d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+            </svg>
+            <input type="text" class="grow" placeholder="Email" />
+          </label>
+
+          <h4 class="text-sm py-2 opacity-70">Will be used in accordance with our <a class="underline" href="">Privacy
+              Policy</a></h4>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end  -->
+</body>
+
+</html>
